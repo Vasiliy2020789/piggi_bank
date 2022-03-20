@@ -13,26 +13,38 @@
 	<h1>Копилочка</h1>
 	<h3>Правила</h3>
 	<p>Этот метод накопления денег основан на откладывании определенной суммы свободных денег каждый день.</p>
-	<ul>
-		<li>1. определите прирост на сколько увеличивать сумму каждый день</li>
-		<li>2. каждый день откладывайте в конверт или на специальный счет комфортную для вас сумму из оставшихся не
+	<ol>
+		<li>Определите с какой периодичностью будите пополнять копилку</li>
+		<li>определите прирост на сколько увеличивать сумму каждый период</li>
+		<li>откладывайте в конверт или на специальный счет комфортную для вас сумму из оставшихся не
 			вычеркнутых клеток</li>
-		<li>3. вычеркивайте клетку с отложенной суммой</li>
-		<li>4. к концу года накопится желанная сумма</li>
-	</ul>
-	<form name="main" class="main-form" action="#">
+		<li>вычеркивайте клетку с отложенной суммой</li>
+		<li>к концу года накопится желанная сумма</li>
+	</ol>
+	<form name="parametersOfСalc" class="main-form" action="#">
 		<div class="main-form__item">
-			<label for="input_1" class="main-form__label">На сколько увеличивать сумму каждый день?</label>
+			<label class="main-form__label">Выберете период пополнения копилки.</label>
+			<div class="main-form__radio">
+				<input checked type="radio" name="period" class="main-form__radio" id="radio_1">
+				<label for="radio_1" class="main-form__inline-label">Каждый день</label>
+			</div>
+			<div class="main-form__radio">
+				<input type="radio" name="period" class="main-form__radio" id="radio_2">
+				<label for="radio_2" class="main-form__inline-label">Каждую неделю</label>
+			</div>
+		</div>
+		<div class="main-form__item">
+			<label for="input_1" class="main-form__label">На сколько увеличивать сумму каждый день?</label> <br>
 			<input tabindex="2" value="" id="input_1" type="text" name="delta" class="main-form__input"
 				placeholder="Введите прирост суммы" autocomplete="off">
 		</div>
 		<div class="main-form__item">
-			<label for="input_1" class="main-form__label">Сколько дней хотите копить?</label>
-			<input tabindex="2" value="" id="input_1" type="text" name="deys" class="main-form__input"
+			<label for="input_1" class="main-form__label">Сколько дней хотите копить?</label><br>
+			<input tabindex="2" value="" id="input_1" type="text" name="duration" class="main-form__input"
 				placeholder="Введите количество дней" autocomplete="off">
 		</div>
 		<div class="main-form__column">
-			<button type="submit" class="button main-form__button">Сделать расчёт</button>
+			<button name="button" class="button main-form__button">Сделать расчёт</button>
 		</div>
 	</form>
 	<div class="сalculations">
