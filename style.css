@@ -1,0 +1,89 @@
+.header {
+	background-color: rgba(35,35,35,0.95);
+}
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+.header__menu {
+	display: flex;
+	justify-content: space-between;
+}
+.header__list {
+	display: flex;
+	flex-direction: column;
+}
+.header__list > li {
+	flex-direction: column;
+}
+.header__list > li > a {
+	color: #ffc966;
+}
+.guide {
+	font-size: 18px;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	background-color: rgba(35,35,35,0.95);
+	color: rgb(240,220,210);
+	display: block;
+	position: absolute;
+}
+.hide{
+	display: none;
+}
+.main-form {
+}
+.main-form__item {
+}
+.main-form__label {
+}
+.main-form__radio {
+}
+.main-form__inline-label {
+}
+.main-form__input {
+}
+.main-form__column {
+}
+.button {
+}
+.main-form__button {
+}
+.сalculations {
+	width: 90%;
+	padding: 5px;
+	margin: 5px auto;
+	font-size: 18px;
+	text-align: center;
+	border-radius: 4px;
+	background-color: #19ff19;
+}
+.results {
+}
+.current-sum {
+}
+.rest-of-days {
+}
+.tabs {
+}
+.tabs__item {
+	display: inline-block;
+	margin: 5px;
+	width: 80px;
+	border: 3px solid #dfa946;
+	border-radius: 5px;
+	background-color: #ffc966;
+}
+.tabs__days {
+	text-align: center;
+}
+.tabs__sum {
+	text-align: center;
+}
+
+.passed {
+	border: 3px solid #19ff19;
+	background-color: #19ff19;
+}
