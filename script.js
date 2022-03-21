@@ -30,8 +30,14 @@ headerLinkGuide.addEventListener("click", function (event) {
 })
 
 headerLinkShowForm.addEventListener("click", function (event) {
-	parametersOfСalc.classList.toggle('hide');
 	event.preventDefault();
+	parametersOfСalc.classList.toggle('hide');
+	console.log(tabs);
+	сalculations.innerHTML = "";
+	while (tabs.firstChild) {
+		tabs.removeChild(tabs.lastChild);
+	}
+	//tabs.childNodes.remove();
 })
 //__end__Функционал кнопок headera
 
@@ -46,10 +52,10 @@ button.addEventListener("click", function (event) {//при событии "clic
 	console.log(delta);
 	let sum = 0;
 	for (i = 0; i < end; i++) {
-		sum = sum + i * delta;
+		sum = sum + (i + 1) * delta;
 		//console.log(sum);
 		tabs.insertAdjacentHTML(
-			"beforebegin",
+			"beforeend",
 			`<div class="tabs__item">
 				<div class="tabs__days">День ${i + 1}-й</div>
 				<div class="tabs__sum">${(i + 1) * delta} рублей</div>
